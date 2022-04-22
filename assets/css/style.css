@@ -1,0 +1,90 @@
+body{
+    background-color: #c0c0c00f;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.accordions{
+    width: 900px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.item{
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    box-shadow: 0 20px 30px 0 rgb(0, 0, 0, 0.07);
+    padding: 0 15px;
+    padding-bottom: 15px;
+}
+
+.item-open{
+    border-top: solid 6px #1864ab;
+}
+
+.number,
+.title{
+    font-size: 24px;
+    color: #212529;  
+    cursor: pointer;          
+}
+
+.number{
+    color: #adb5bd;
+}
+
+.icon{
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    stroke: #212529;
+}
+
+.content{
+    grid-column: 2;
+    display: none;
+}
+
+.content-open{
+    display: block;
+}
+
+.number-open,
+.title-open{
+    font-size: 24px;
+    color: #1864ab;  
+    cursor: pointer;          
+}
+
+.icon-open{
+    stroke: #212529;
+}
+
+.icon-close{
+    stroke: #1864ab;  
+    display: none;
+}
+
+.content p{
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.content h3{
+    margin-bottom: 12px;
+}
+
+.content ul{
+    color: #495057;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-left: 24px;
+}
